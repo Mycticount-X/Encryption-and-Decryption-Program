@@ -3,10 +3,19 @@ from tkinter import messagebox
 import base64
 import os
 
+"""
+Made by Mycticount Xeta Ahlovely (Mycticount-X)
+Some of this code belongs to Parvat Computer Technology (YouTube)
+"""
+
 # Fungsi Enkripsi
 def enkripsi():
     password=code.get()
-    
+    """
+    Basically, this section checks
+    the correctness of the password
+    and then encrypts the inputted text.
+    """
     if password == "MXA23":
         screen1 = Toplevel(screen)
         screen1.title("Enkripsi")
@@ -33,7 +42,11 @@ def enkripsi():
 # Fungsi Dekripsi
 def dekripsi():
     password=code.get()
-    
+    """
+    Similar to enkripsi(), this section checks
+    the correctness of the password
+    and then encrypts the inputted text.
+    """
     if password == "MXA23":
         screen2 = Toplevel(screen)
         screen2.title("Dekripsi")
@@ -59,12 +72,21 @@ def dekripsi():
 def hapus():
     code.set("")
     teks1.delete(1.0, END)
-    
+
+
 # Fungsi Layar Utama
 def screen_inti():
     global screen
     global code
     global teks1
+    
+    """
+    This is the Screen Inti or Main Screen
+    This is the most crusial part
+    because you must adjust
+    the settings of the UI correctly
+    so that it looks good
+    """
     
     screen = Tk()
     screen.geometry("375x360")
