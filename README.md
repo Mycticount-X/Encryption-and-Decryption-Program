@@ -1,47 +1,36 @@
-# Hangman Game
+# Encryption and Decryption Program
 
-This is a simple console-based Hangman game implemented in Python. The game allows the player to guess letters or words to find a hidden word. The player has 6 attempts to guess the word correctly before the "hangman" is fully drawn, indicating a loss.
+This is a simple GUI-based program written in Python using the `tkinter` library. The program allows users to encrypt and decrypt text using Base64 encoding. It features a password-protected interface to ensure that only authorized users can perform encryption or decryption.
 
 ## Features
 
-- **Random Word Selection**: Words are randomly selected from two lists: `Daftar_Kata` for regular gameplay and `Daftar_Kata_Tantangan` for challenge mode.
-- **Two Modes**: The game supports a normal mode and a hidden "challenge mode" which is triggered by entering the secret input "TANTANGAN".
-- **Interactive Gameplay**: Players can guess either a single letter or the entire word. The game provides feedback for correct or incorrect guesses.
-- **ASCII Art Hangman**: Visual feedback is provided in the form of a "hangman" being drawn with each incorrect guess.
+- **Text Encryption**: Users can input text and encrypt it using Base64 encoding. The encrypted text is displayed in a separate window.
+- **Text Decryption**: Users can input encrypted text and decrypt it back to its original form. The decrypted text is also displayed in a separate window.
+- **Password Protection**: Only users who enter the correct password can access the encryption and decryption functionalities.
+- **Intuitive GUI**: The program provides a simple and easy-to-use graphical interface for entering text and performing encryption or decryption.
 
-## How to Play
+## How to Use
 
-1. Run the script to start the game.
-2. Choose a mode by either entering any input for the normal game or typing "TANTANGAN" for the challenge mode.
-3. Start guessing letters or the entire word.
-4. You win if you guess all the letters of the word correctly or the full word before running out of lives.
-5. The game ends in a loss if you run out of lives, and the hangman is fully drawn.
+1. Run the program to open the main interface.
+2. Enter the text you want to encrypt or decrypt in the provided text box.
+3. Enter the password (`MXA23` by default) in the password field.
+4. Click the "Encrypt" button to encrypt the text or the "Decrypt" button to decrypt the text.
+5. The result will be shown in a new window.
 
 ## Prerequisites
 
 - Python 3.x
-- Ensure that the `Kata.py` file containing the word lists `Daftar_Kata` and `Daftar_Kata_Tantangan` is present in the same directory as this script.
+- The `tkinter` library (comes pre-installed with Python)
 
 ## Example Output
 
-```plaintext
-Sistem: Permainan Hangman dimulai!
-  --------
-  |      |
-  |      
-  |    
-  |      
-  |     
-  -
-______
+Here is how the encryption and decryption interface looks:
 
-Tebakan tersisa: 6
-Silahkan tebak sebuah huruf atau kata: 
-```
+![Encryption and Decryption Interface](Screenshot (250).png)
 
 ## Author
 
-This Hangman game was created by **Mycticount Xeta Ahlovely (Mycticount-X)**. Some parts of the code were inspired by content from Parvat Computer Technology on YouTube.
+This program was created by **Mycticount Xeta Ahlovely (Mycticount-X)**. Some parts of the code were inspired by content from Parvat Computer Technology on YouTube.
 
 ## License
 
@@ -49,50 +38,39 @@ This project is open-source and available under the [MIT License](LICENSE).
 
 ---
 
-# Permainan Hangman
+# Program Enkripsi dan Dekripsi
 
-Ini adalah permainan Hangman berbasis konsol sederhana yang diimplementasikan dalam Python. Permainan ini memungkinkan pemain untuk menebak huruf atau kata untuk menemukan kata tersembunyi. Pemain memiliki 6 kesempatan untuk menebak kata dengan benar sebelum "hangman" digambar sepenuhnya, yang menunjukkan kekalahan.
+Ini adalah program sederhana berbasis GUI yang ditulis dalam Python menggunakan perpustakaan `tkinter`. Program ini memungkinkan pengguna untuk mengenkripsi dan mendekripsi teks menggunakan encoding Base64. Program ini juga memiliki antarmuka yang dilindungi kata sandi untuk memastikan hanya pengguna yang berwenang yang dapat melakukan enkripsi atau dekripsi.
 
 ## Fitur
 
-- **Pemilihan Kata Acak**: Kata-kata dipilih secara acak dari dua daftar: `Daftar_Kata` untuk permainan biasa dan `Daftar_Kata_Tantangan` untuk mode tantangan.
-- **Dua Mode**: Permainan mendukung mode normal dan mode "tantangan" tersembunyi yang dipicu dengan memasukkan input rahasia "TANTANGAN".
-- **Permainan Interaktif**: Pemain dapat menebak huruf tunggal atau kata keseluruhan. Permainan memberikan umpan balik untuk tebakan yang benar atau salah.
-- **Hangman ASCII Art**: Umpan balik visual diberikan dalam bentuk "hangman" yang digambar dengan setiap tebakan yang salah.
+- **Enkripsi Teks**: Pengguna dapat memasukkan teks dan mengenkripsinya menggunakan encoding Base64. Teks yang dienkripsi akan ditampilkan di jendela terpisah.
+- **Dekripsi Teks**: Pengguna dapat memasukkan teks yang sudah dienkripsi dan mendekripsinya kembali ke bentuk aslinya. Teks yang didekripsi juga akan ditampilkan di jendela terpisah.
+- **Perlindungan Kata Sandi**: Hanya pengguna yang memasukkan kata sandi yang benar yang dapat mengakses fungsi enkripsi dan dekripsi.
+- **GUI yang Intuitif**: Program ini menyediakan antarmuka grafis yang sederhana dan mudah digunakan untuk memasukkan teks dan melakukan enkripsi atau dekripsi.
 
-## Cara Bermain
+## Cara Menggunakan
 
-1. Jalankan skrip untuk memulai permainan.
-2. Pilih mode dengan memasukkan input apa saja untuk permainan normal atau ketik "TANTANGAN" untuk mode tantangan.
-3. Mulai menebak huruf atau kata keseluruhan.
-4. Anda menang jika menebak semua huruf dari kata dengan benar atau kata penuh sebelum nyawa habis.
-5. Permainan berakhir dengan kekalahan jika nyawa habis, dan hangman digantung sepenuhnya.
+1. Jalankan program untuk membuka antarmuka utama.
+2. Masukkan teks yang ingin dienkripsi atau didekripsi di kotak teks yang disediakan.
+3. Masukkan kata sandi (`MXA23` secara default) di bidang kata sandi.
+4. Klik tombol "Enkripsi" untuk mengenkripsi teks atau tombol "Dekripsi" untuk mendekripsi teks.
+5. Hasilnya akan ditampilkan di jendela baru.
 
 ## Prasyarat
 
 - Python 3.x
-- Pastikan file `Kata.py` yang berisi daftar kata `Daftar_Kata` dan `Daftar_Kata_Tantangan` ada di direktori yang sama dengan skrip ini.
+- Perpustakaan `tkinter` (sudah terpasang secara default dengan Python)
 
 ## Contoh Output
 
-```plaintext
-Sistem: Permainan Hangman dimulai!
-  --------
-  |      |
-  |      
-  |    
-  |      
-  |     
-  -
-______
+Berikut tampilan antarmuka Enkripsi dan Dekripsi:
 
-Tebakan tersisa: 6
-Silahkan tebak sebuah huruf atau kata: 
-```
+![Encryption and Decryption Interface](Screenshot (250).png)
 
-## Penulis
+## Pembuat
 
-Permainan Hangman ini dibuat oleh **Mycticount Xeta Ahlovely (Mycticount-X)**. Beberapa bagian kode terinspirasi dari konten di Parvat Computer Technology di YouTube.
+Program ini dibuat oleh **Mycticount Xeta Ahlovely (Mycticount-X)**. Beberapa bagian kode terinspirasi dari konten di Parvat Computer Technology di YouTube.
 
 ## Lisensi
 
