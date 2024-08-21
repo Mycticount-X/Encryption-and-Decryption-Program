@@ -26,7 +26,7 @@ This is a simple GUI-based program written in Python using the `tkinter` library
 
 Here is how the encryption and decryption interface looks:
 
-![Encryption and Decryption Interface](Screenshot (250).png)
+![Encryption and Decryption Interface](Screenshot%20(250).png)
 
 ## Author
 
@@ -66,7 +66,7 @@ Ini adalah program sederhana berbasis GUI yang ditulis dalam Python menggunakan 
 
 Berikut tampilan antarmuka Enkripsi dan Dekripsi:
 
-![Encryption and Decryption Interface](Screenshot (250).png)
+![Encryption and Decryption Interface](Screenshot%20(250).png)
 
 ## Pembuat
 
