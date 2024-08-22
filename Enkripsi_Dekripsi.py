@@ -12,9 +12,11 @@ Some of this code belongs to Parvat Computer Technology (YouTube)
 def enkripsi():
     password=code.get()
     """
-    Basically, this section checks
-    the correctness of the password
+    Basically, this section test the correctness of the inputted password
     and then encrypts the inputted text.
+
+    Pada dasarnya, bagian ini menguji kebenaran dari password yang dimasukan
+    lalu mengenkripsi teks yang diinput.
     """
     if password == "MXA23":
         screen1 = Toplevel(screen)
@@ -43,9 +45,11 @@ def enkripsi():
 def dekripsi():
     password=code.get()
     """
-    Similar to enkripsi(), this section checks
-    the correctness of the password
-    and then encrypts the inputted text.
+    Similar to enkripsi(), this section test the correctness of the password
+    and then decrypts the inputted text.
+
+    Mirip seperti enkripsi(), bagian ini menguji kebenaran dari password yang dimasukan
+    lalu mengdekripsi teks yang diinput.
     """
     if password == "MXA23":
         screen2 = Toplevel(screen)
@@ -81,11 +85,15 @@ def screen_inti():
     global teks1
     
     """
-    This is the Screen Inti or Main Screen
-    This is the most crusial part
-    because you must adjust
-    the settings of the UI correctly
-    so that it looks good
+    This is the Main Screen (screen_inti())
+    This is the most crusial part because you must adjust
+    the settings of the UI correctly so the app looks good
+    This include the screen, button, and input box
+
+    Ini adalah Layar Utama (screen_inti())
+    Ini adalah bagian yang paling krusial karena kalian harus
+    menyesuaikan settingan UI dengan benar supaya applikasinya terlihat bagus
+    Ini termasuk layar, tombol, dan kotak input
     """
     
     screen = Tk()
@@ -93,10 +101,10 @@ def screen_inti():
     screen.title("Enkripsi dan Dekripsi")
     screen.configure(bg="#F5F7F8")
     
-    #logo
-    #image_icon=PhotoImage(file="keys.png")
-    #screen.iconphoto(False, image_icon)
-
+    # === logo ===
+    # Logo ini adalah orisinil buatan Mycticount Xeta Ahlovely
+    image_icon=PhotoImage(file="Logo_Enkripsi_Dekripsi.png")
+    screen.iconphoto(False, image_icon)
 
     # *** Input Teks Utama ***
     Label(text="Masukan Teks", fg="black", font =("calibri", 13)).place(x = 10, y= 15)
