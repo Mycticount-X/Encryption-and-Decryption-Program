@@ -12,9 +12,11 @@ Some of this code belongs to Parvat Computer Technology (YouTube)
 def enkripsi():
     password=code.get()
     """
+    [ENG]
     Basically, this section test the correctness of the inputted password
     and then encrypts the inputted text.
 
+    [IND]
     Pada dasarnya, bagian ini menguji kebenaran dari password yang dimasukan
     lalu mengenkripsi teks yang diinput.
     """
@@ -45,9 +47,11 @@ def enkripsi():
 def dekripsi():
     password=code.get()
     """
+    [ENG]
     Similar to enkripsi(), this section test the correctness of the password
     and then decrypts the inputted text.
 
+    [IND]
     Mirip seperti enkripsi(), bagian ini menguji kebenaran dari password yang dimasukan
     lalu mengdekripsi teks yang diinput.
     """
@@ -84,12 +88,14 @@ def screen_inti():
     global code
     global teks1
     
-    """
+    """ [ENG]
     This is the Main Screen (screen_inti())
     This is the most crusial part because you must adjust
     the settings of the UI correctly so the app looks good
     This include the screen, button, and input box
+    """
 
+    """ [IND]
     Ini adalah Layar Utama (screen_inti())
     Ini adalah bagian yang paling krusial karena kalian harus
     menyesuaikan settingan UI dengan benar supaya applikasinya terlihat bagus
